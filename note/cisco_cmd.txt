@@ -1,0 +1,83 @@
+Router> = user EXEC mode
+Router# = privileged EXEC mode
+Router(config)# = global configuration mode
+
+
+login root user{ enable ,en }
+
+e? = search cmd
+configure terminal ( conf t ) = change config
+
+enable password CCNA = ccna is password
+
+
+#show
+show running-config
+show startup-config
+sh run = show running config
+do sh run = show global running config
+
+
+#save
+write
+write memory
+copy running-config startup-config
+
+
+#password
+service password-encryption
+enable secret password Cisco
+
+
+#remove
+no service password-encryption
+
+#show arp table
+show arp
+
+hostname R1 = enter router
+
+clear mac address-table dynamic
+show mac address-table
+clear mac address-table dynamic
+clear mac address-table dynamic address mac-address
+
+
+clear mac address-table
+
+
+long form = show ip interface brief
+short form = do sh ip int br
+
+
+
+#interface
+interface gigabitethernet 0/0
+in = interface
+in g0/0
+
+
+#subnet mask
+ip address 10.255.255.254 ?
+ip address 10.255.255.254 255.0.0.0
+
+
+no shutdown
+show interfaces description
+
+
+43. 109. 23. 12 /8
+8   8    8   8  = 24
+
+11111111 11111111 11111111 11111111 = 255.255.255.255
+11111111 11111111 11111111 00000000 = 255.255.255.0
+
+43.109.23.12/24
+
+
+
+
+
+
+ip route destination-address mask next-hop-address
+
