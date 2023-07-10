@@ -1,0 +1,12 @@
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+
+mysql-server
+mysql-server
+sudo mysql_secure_installation
+sudo dpkg-reconfigure phpmyadmin
+
+
+phpmyadmin
+
+gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false

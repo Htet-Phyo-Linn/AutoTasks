@@ -1,0 +1,30 @@
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+plugins=( 
+	git
+	sudo
+	copydir
+	copyfile
+	jsontools
+	dirhistory
+	copybuffer
+	web-search
+	zsh-autosuggestions
+	zsh-syntax-highlighting
+)
+
+
+
+ctrl+o = copybuffer
+
+#dirhistory
+Alt + Left	Go to previous directory
+Alt + Right	Go to next directory
+Alt + Up	Move into the parent directory
+Alt + Down	Move into the first child directory by alphabetical order
+dirs -v		see all history
+
+| pp_json = jsontools
+curl https://ipinfo.io/json | pp_json

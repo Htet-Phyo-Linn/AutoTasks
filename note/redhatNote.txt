@@ -1,0 +1,185 @@
+https://rha.ole.redhat.com/rha/app/
+
+#account 
+Workstation -> student -> student
+
+
+###cmd list###
+passwd
+whoami
+;
+
+[user@host ~]$ date
+Sun Feb 27 08:32:42 PM EST 2022
+[user@host ~]$ date +%R
+20:33
+[user@host ~]$ date +%x
+02/27/2022
+
+user@host ~]$ file /etc/passwd
+
+[user@host ~]$ file /bin/passwd
+
+[user@host ~]$ cat /etc/passwd
+
+[user@host ~]$ head /etc/passwd
+
+[user@host ~]$ tail -n 3 /etc/passwd
+
+[user@host ~]$ wc /etc/passwd
+
+[user@host ~]$ wc -l /etc/passwd ; wc -l /etc/group
+
+[user@host ~]$ wc -c /etc/group /etc/hosts
+
+[user@host ~]$ head -n 3 \
+/usr/share/dict/words \
+/usr/share/dict/linux.words
+
+[user@host ~]$ !ls
+
+[user@host ~]$ !26
+
+pwd 
+touch
+ls -lR = show all the file list including sub folder
+rm -ri = asked y or no
+
+
+
+#output file
+one line insert = cat vim_cmd.txt | grep "undo" > undo.txt
+multiple line insert = cat vim_cmd.txt | grep "undo" >> undo.txt
+
+#pip line 
+| = redirect to the file
+
+#find errors message
+find /etc -name passwd 2> /tmp/errors
+
+#add output to file
+tee = command
+ls -l | tee list | less
+
+#variable expansion
+[user@host ~]$ USERNAME=operator
+[user@host ~]$ echo ${USERNAME}
+operator
+
+#command subsitution
+[user@host glob]$ echo Today is $(date +%A).
+
+#protecting arguments
+[user@host glob]$ myhost=$(hostname -s); echo $myhost
+host
+
+
+
+
+###User Account###
+
+su - username = switch user account
+sudo -i = enter root account and root directory
+ 
+
+#enter root account and current directory
+sudo su
+
+#change user password
+passwd = user account
+passwd user01 = another account
+
+#create user account
+useradd user01
+
+#user delete 
+userdel -r username
+
+
+##permission
+r = read
+w = write
+x = execute
+X = special execute
+
+u = user
+g = group
+o =	other
+a = all
+
++ = add 
+- = remove
+= = set exactly
+
+#cmd 
+chmod +x = add execute
+
+start = 0
+read = 4
+write = 2
+execute = 1
+
+r+w+x = 7
+4+2+1 = 7 (all permission)
+4+2+0 = 6 (read and write)
+4+0+0 = 4 (read)
+
+
+#practice 
+Press the Alt+F2 key combination to open the Enter a Command and enter gnome-terminal.
+
+Change password -> student to 55TurnK3y -> using passwd
+
+Alt+. key combination 
+
+Finish
+
+On the workstation machine, change to the student user home directory and use the lab command to complete this exercise. This step is important to ensure that resources from previous exercises do not impact upcoming exercises -> student@workstation ~]$ lab finish cli-desktop
+
+
+
+
+#login
+[student@workstation ~]$ lab start cli-desktop
+
+
+
+
+#switch between tty
+Ctrl+Alt and a function key (F1 through F6)
+
+
+
+
+#ssh related 
+[user@host ~]$ ssh remoteuser@remotehost
+remoteuser@remotehost's password: password
+[remoteuser@remotehost ~]$
+
+user@host ~]$ ssh -i mylab.pem remoteuser@remotehost
+[remoteuser@remotehost ~]$
+
+[user@host ~]$ ssh -i mylab.pem remoteuser@remotehost
+
+
+
+
+#permission 
+chmod 600 mylab.pem 
+
+Close the connection = Ctrl+D
+
+
+
+
+#shortcut
+Superkey+M = message tray
+
+Ctrl+Alt+LeftArrow or Ctrl+Alt+RightArrow = switch between workspace 
+
+Super+L (which might be easier to remember as Windows+L) = lock screen 
+
+on-screen keyboard treats as modifier keys (like Super) are Shift, Ctrl, Alt, and Caps. The Esc and Menu keys are treated like normal keys and not modifier keys.
+
+
+
