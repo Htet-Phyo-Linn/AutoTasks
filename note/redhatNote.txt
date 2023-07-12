@@ -48,26 +48,32 @@ rm -ri = asked y or no
 
 
 #output file
-one line insert = cat vim_cmd.txt | grep "undo" > undo.txt
-multiple line insert = cat vim_cmd.txt | grep "undo" >> undo.txt
+cat vim_cmd.txt | grep "undo" > undo.txt = one line insert or only ouput overwrite
+cat vim_cmd.txt | grep "undo" >> undo.txt = multiple line insert or append
+
 
 #pip line 
 | = redirect to the file
 
+
 #find errors message
 find /etc -name passwd 2> /tmp/errors
+
 
 #add output to file
 tee = command
 ls -l | tee list | less
+
 
 #variable expansion
 [user@host ~]$ USERNAME=operator
 [user@host ~]$ echo ${USERNAME}
 operator
 
+
 #command subsitution
 [user@host glob]$ echo Today is $(date +%A).
+
 
 #protecting arguments
 [user@host glob]$ myhost=$(hostname -s); echo $myhost
@@ -94,6 +100,16 @@ useradd user01
 
 #user delete 
 userdel -r username
+
+
+
+##user group
+groupadd -g 10000 group01 = create gruop with GID
+tail /etc/group = check group
+sudo groupadd groupName = group add
+sudo groupdel groupName = group delete
+chown user:groupName filename = change group name
+
 
 
 ##permission
@@ -132,6 +148,9 @@ chown :admins Pictures = give permission to admin
 chown visitor:guests Pictures = owner:group syntax
 
 
+
+
+
 ###Setting Special Permissions
 Symbolic : setuid = u+s; setgid = g+s; sticky = o+t
 
@@ -143,10 +162,6 @@ sticky = 1;
 umask = show current permission
 
 
-##user group
-sudo groupadd groupName = group add
-sudo groupdel groupName = group delete
-chown user:groupName filename = change group name
 
 
 
