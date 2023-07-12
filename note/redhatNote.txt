@@ -122,8 +122,21 @@ sudo groupadd groupName = group add
 sudo groupdel groupName = group delete
 
 
+
+
 ###Configure password
-[root@host ~]# chage -m 0 -M 90 -W 7 -I 14 sysadmin05 = minimum age (-m) of zero days, a maximum age (-M) of 90 days, a warning period (-W) of 7 days, and an inactivity period (-I) of 14 days.
+
+[root@host ~]# chage -m 0 -M 90 -W 7 -I 14 sysadmin05 -->> minimum age (-m) of zero days, a maximum age (-M) of 90 days, a warning period (-W) of 7 days, and an inactivity period (-I) of 14 days.
+
+
+
+###Restrict Access
+
+usermod -L sysadmin03 = Lock user account
+usermod -L -e 2022-08-14 cloudadmin10 = Lock user account and expired account
+usermod -U sysadmin03 = unlock user account 
+
+for research = nologin shell
 
 
 
