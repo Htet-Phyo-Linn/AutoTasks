@@ -132,6 +132,32 @@ chown :admins Pictures = give permission to admin
 chown visitor:guests Pictures = owner:group syntax
 
 
+###Setting Special Permissions
+Symbolic : setuid = u+s; setgid = g+s; sticky = o+t
+
+Octal : In the added fourth preceding digit;
+setuid = 4;
+setgid = 2;
+sticky = 1;
+
+umask = show current permission
+
+
+##user group
+sudo groupadd groupName = group add
+sudo groupdel groupName = group delete
+chown user:groupName filename = change group name
+
+
+
+
+
+
+
+
+
+
+
 
 
 #practice 
