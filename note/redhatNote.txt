@@ -125,6 +125,15 @@ r+w+x = 7
 4+0+0 = 4 (read)
 
 
+##change owner
+chown
+chown -R student Pictures = -R entire dictionary tree
+chown :admins Pictures = give permission to admin
+chown visitor:guests Pictures = owner:group syntax
+
+
+
+
 #practice 
 Press the Alt+F2 key combination to open the Enter a Command and enter gnome-terminal.
 
