@@ -122,6 +122,9 @@ sudo groupadd groupName = group add
 sudo groupdel groupName = group delete
 
 
+###Configure password
+[root@host ~]# chage -m 0 -M 90 -W 7 -I 14 sysadmin05 = minimum age (-m) of zero days, a maximum age (-M) of 90 days, a warning period (-W) of 7 days, and an inactivity period (-I) of 14 days.
+
 
 
 
