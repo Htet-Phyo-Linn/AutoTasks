@@ -103,12 +103,27 @@ userdel -r username
 
 
 
-##user group
-groupadd -g 10000 group01 = create gruop with GID
+###user group
+
+groupadd -g 10000 group01 = create group with GID
+groupadd -r group02 = create system group
+groupmod -n group0022 group02 = existing group to change
+groupmod -g 20000 group0022 = system to normal
+
+id user02 = check the user id
+usermod -g group01 user02 = change user02 default group to group01
+usermod -aG group01 user03 = add user to supplementary group(two groups)
+
+newgrp group01 = temporarily change the primary group
+
 tail /etc/group = check group
+
 sudo groupadd groupName = group add
 sudo groupdel groupName = group delete
-chown user:groupName filename = change group name
+
+
+
+
 
 
 
@@ -146,7 +161,7 @@ chown
 chown -R student Pictures = -R entire dictionary tree
 chown :admins Pictures = give permission to admin
 chown visitor:guests Pictures = owner:group syntax
-
+chown user:groupName filename = change group name
 
 
 
@@ -169,6 +184,27 @@ umask = show current permission
 
 
 
+
+###user password
+
+cat /etc/shadow
+user03 : Name of the user account.
+
+$6$CSsXsd3rwghsdfarf : The cryptographically hashed password of the user.
+
+17933 : The days from the epoch when the password was last changed, where the epoch is 1970-01-01 in the UTC time zone.
+
+0 : The minimum days since the last password change before the user can change it again.
+
+99999 : The maximum days without a password change before the password expires. An empty field means that the password never expires.
+
+7 : The number of days ahead to warn the user that their password will expire.
+
+2 : The number of days without activity, starting with the day that the password expired, before the account is automatically locked.
+
+18113 : The day when the account expires in days since the epoch. An empty field means that the account never expires.
+
+The last field is typically empty and is reserved for future use.
 
 
 
