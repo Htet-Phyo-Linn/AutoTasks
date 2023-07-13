@@ -1,6 +1,15 @@
-#Acquire {
-#	HTTP::proxy "http://192.168.0.0";
-#	HTTPS::proxy "http:://192.168.0.0";
-#}
+Only use for terminal
+
+###code
+Acquire {
+HTTP::proxy "http://192.168.0.0";
+HTTPS::proxy "http:://192.168.0.0";
+}
+
 
 file path = /etc/apt/apt.conf.d/proxy.conf
+
+
+###Note
+If the proxy address can be pinged, but the proxy usage does not increase, you should check the DNS settings.
+
