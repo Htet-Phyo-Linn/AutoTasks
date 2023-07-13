@@ -110,11 +110,25 @@ groupadd -r group02 = create system group
 groupmod -n group0022 group02 = existing group to change
 groupmod -g 20000 group0022 = system to normal
 
+
 id user02 = check the user id
 usermod -g group01 user02 = change user02 default group to group01
 usermod -aG group01 user03 = add user to supplementary group(two groups)
 
+
 newgrp group01 = temporarily change the primary group
+
+
+
+
+#Create the consultant1, consultant2, and consultant3 users with the consultants group as their supplementary group.
+
+useradd -G consultants consultant1
+useradd -G consultants consultant2
+useradd -G consultants consultant3
+
+
+
 
 tail /etc/group = check group
 
@@ -140,6 +154,7 @@ chage -d 0 operator1 = force change on first login
 usermod -L sysadmin03 = Lock user account
 usermod -L -e 2022-08-14 cloudadmin10 = Lock user account and expired account
 usermod -U sysadmin03 = unlock user account 
+chage -E 2022-06-08 consultant1 = set expiry date
 
 for research = nologin shell
 
