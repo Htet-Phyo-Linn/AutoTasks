@@ -46,6 +46,10 @@ ls -lR = show all the file list including sub folder
 rm -ri = asked y or no
 
 
+#see process status
+top
+ps aux
+
 
 #output file
 cat vim_cmd.txt | grep "undo" > undo.txt = one line insert or only ouput overwrite
@@ -217,8 +221,9 @@ umask = show current permission
 
 
 
-
-
+###short form
+PID = unique process ID
+PPID = The parent's process ID
 
 
 ###user password
