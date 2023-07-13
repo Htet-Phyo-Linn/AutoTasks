@@ -1,1 +1,7 @@
+transport=('car' 'train' 'bike' 'bus')
+echo "${transport[@]}"
+
+# $1 = read the first argument, number can be changed 
+# @ = show all elements in array
+
 
