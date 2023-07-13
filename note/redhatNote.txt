@@ -40,22 +40,18 @@ user@host ~]$ file /etc/passwd
 
 [user@host ~]$ !26
 
-pwd 
-touch
+pwd = show file path 
+touch = create new file
 ls -lR = show all the file list including sub folder
 rm -ri = asked y or no
 sleep
-jobs
+jobs = show all file list 
 fg %jobNumber = bring the process to foreground 
 bg %jobNumber = running the suspended job
+kill -9 name or processID
 
 
-#see process status
-top
-ps = CMD
-ps aux
-ps lax
-ps -ef
+
 
 
 #output file
@@ -90,6 +86,18 @@ operator
 [user@host glob]$ myhost=$(hostname -s); echo $myhost
 host
 
+
+#Control Specific Processes
+pgrep
+pkill -9 name
+
+
+#see process status
+top
+ps = CMD
+ps aux
+ps lax
+ps -ef
 
 
 
