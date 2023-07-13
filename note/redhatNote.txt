@@ -47,7 +47,7 @@ rm -ri = asked y or no
 sleep
 jobs
 fg %jobNumber = bring the process to foreground 
-
+bg %jobNumber = running the suspended job
 
 
 #see process status
