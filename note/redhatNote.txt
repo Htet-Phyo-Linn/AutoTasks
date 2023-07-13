@@ -44,11 +44,18 @@ pwd
 touch
 ls -lR = show all the file list including sub folder
 rm -ri = asked y or no
+sleep
+jobs
+fg %jobNumber = bring the process to foreground 
+
 
 
 #see process status
 top
+ps = CMD
 ps aux
+ps lax
+ps -ef
 
 
 #output file
