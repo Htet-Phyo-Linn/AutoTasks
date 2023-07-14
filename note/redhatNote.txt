@@ -1,3 +1,11 @@
+###Read First###
+If you want to find specific commands, you can use the "grep" command.
+I also frequently use it for various purposes.
+
+
+
+
+#redhat academy link
 https://rha.ole.redhat.com/rha/app/
 
 #account 
@@ -9,6 +17,8 @@ passwd
 whoami
 ;
 
+
+#date
 [user@host ~]$ date
 Sun Feb 27 08:32:42 PM EST 2022
 [user@host ~]$ date +%R
@@ -16,35 +26,28 @@ Sun Feb 27 08:32:42 PM EST 2022
 [user@host ~]$ date +%x
 02/27/2022
 
-user@host ~]$ file /etc/passwd
+file /etc/passwd = check file type
+cat /etc/passwd = display content from file 
+head /etc/passwd = first 10 lines or ....
+tail -n 3 /etc/passwd = last 10 lines or
 
-[user@host ~]$ file /bin/passwd
+wc /etc/passwd = word count
+wc -l /etc/passwd ; wc -l /etc/group
+wc -c /etc/group /etc/hosts
 
-[user@host ~]$ cat /etc/passwd
-
-[user@host ~]$ head /etc/passwd
-
-[user@host ~]$ tail -n 3 /etc/passwd
-
-[user@host ~]$ wc /etc/passwd
-
-[user@host ~]$ wc -l /etc/passwd ; wc -l /etc/group
-
-[user@host ~]$ wc -c /etc/group /etc/hosts
-
-[user@host ~]$ head -n 3 \
+head -n 3 \
 /usr/share/dict/words \
 /usr/share/dict/linux.words
 
-[user@host ~]$ !ls
-
-[user@host ~]$ !26
+!ls = previous cmd
+!26
 
 pwd = show file path 
 touch = create new file
 ls -lR = show all the file list including sub folder
 rm -ri = asked y or no
 sleep
+
 jobs = show all file list 
 fg %jobNumber = bring the process to foreground 
 bg %jobNumber = running the suspended job
