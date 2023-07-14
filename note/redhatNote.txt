@@ -260,6 +260,24 @@ enable --now
 ssh username@server 
 w = displays a list of users that are currently logged in to the system
 
+Server
+/etc/ssh/ssh_known_hosts
+
+User
+~/.ssh/known_hosts
+
+ssh-keygen -lf /etc/ssh/ssh_host_ecdsa_key.pub
+
+
+#ssh key
+cat ~/.ssh/known_hosts
+output -->> server1 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOmiLKMExRnsS1g7OTxMsOmgHuUSGQBUxHhuUGcv19uT
+
+First field = host or ip
+Second field = encryption algorithm
+Third field = public key
+
+
 
 
 
