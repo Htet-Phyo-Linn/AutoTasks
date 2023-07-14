@@ -147,9 +147,6 @@ useradd -G consultants consultant1
 useradd -G consultants consultant2
 useradd -G consultants consultant3
 
-
-
-
 tail /etc/group = check group
 
 sudo groupadd groupName = group add
@@ -231,6 +228,37 @@ setgid = 2;
 sticky = 1;
 
 umask = show current permission
+
+
+
+
+
+###Control service and daemon
+
+start, stop, restart, status, mask, unmask reload, enable, disable, 
+
+systemctl list-units --type=service = show all the service 
+
+systemctl list-unit-files --type=service = to see the state of all the installed unit files
+
+--type=socket
+
+systemctl status sshd.service = view service status
+
+systemctl is-active sshd.service = verify 
+systemctl is-enabled sshd.service
+
+systemctl list-dependencies sshd.service 
+
+systemctl enable sshd.service = start at boot
+enable --now 
+
+
+
+
+###ssh
+ssh username@server 
+w = displays a list of users that are currently logged in to the system
 
 
 
