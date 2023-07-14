@@ -263,13 +263,19 @@ enable --now
 ssh username@server 
 w = displays a list of users that are currently logged in to the system
 
-Server
-/etc/ssh/ssh_known_hosts
+Server = /etc/ssh/ssh_known_hosts
 
-User
-~/.ssh/known_hosts
+User = ~/.ssh/known_hosts
 
-ssh-keygen -lf /etc/ssh/ssh_host_ecdsa_key.pub
+ssh-keygen = generating private and public key
+ssh-keygen -f .ssh/key-with-pass = specific file name
+
+
+w --from = user status
+
+
+
+
 
 
 #ssh key
