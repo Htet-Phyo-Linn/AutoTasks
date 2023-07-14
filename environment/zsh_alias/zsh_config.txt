@@ -16,14 +16,6 @@ alias -g so="sudo source ~/.zshrc"
 alias -g ch="sudo chmod +x"
 alias -g rdir="sudo rm -rf"
 
-#autoTask
-alias -g ram="sudo sh /home/guardiau-devil/autoTask/zsh/clearRAM.sh"
-
-#network
-alias -g sna="sudo sh /home/guardiau-devil/autoTask/zsh/snap.sh"
-alias -g myip="python3 /home/guardiau-devil/autoTask/zsh/ipinfo.py"
-alias -g dns="sudo python3 /home/guardiau-devil/autoTask/zsh/DNS.py"
-alias -g gp="sudo python3 /home/guardiau-devil/autoTask/zsh/gitPush.py"
 
 #exa
 alias -g ls="exa --icons"
