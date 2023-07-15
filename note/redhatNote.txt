@@ -270,6 +270,11 @@ User = ~/.ssh/known_hosts
 ssh-keygen = generating private and public key
 ssh-keygen -f .ssh/key-with-pass = specific file name
 
+ssh-copy-id -i .ssh/key-with-pass.pub user@remotehost = copy public key to remote system
+
+eval $(ssh-agent) = Start ssh agent and set environment variable 
+
+ssh-add privateFile = default private key file to access account 
 
 w --from = user status
 
