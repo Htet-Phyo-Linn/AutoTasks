@@ -55,7 +55,11 @@ kill -9 name or processID
 uptime = display current load
 lscpu
 
-
+#network
+ifconfig
+ip route
+tracepath
+ss -ta = display socket status
 
 
 #output file
