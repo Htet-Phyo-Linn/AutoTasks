@@ -3,8 +3,6 @@ If you want to find specific commands, you can use the "grep" command.
 I also frequently use it for various purposes.
 
 
-
-
 #redhat academy link
 https://rha.ole.redhat.com/rha/app/
 
@@ -16,7 +14,6 @@ Workstation -> student -> student
 passwd
 whoami
 ;
-
 
 #date
 [user@host ~]$ date
@@ -54,16 +51,7 @@ bg %jobNumber = running the suspended job
 kill -9 name or processID
 uptime = display current load
 lscpu
-
-#network
-ifconfig = ip -br addr = ip -s link usb0 
-ip route
-tracepath
-ss -ta = display socket status
-
-nmcli dev status = see status
-nmcli con show = including uuid
-
+ip link
 
 
 #output file
@@ -131,6 +119,7 @@ useradd user01
 
 #user delete 
 userdel -r username
+
 
 
 
@@ -288,9 +277,6 @@ w --from = user status
 
 
 
-
-
-
 #ssh key
 cat ~/.ssh/known_hosts
 output -->> server1 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOmiLKMExRnsS1g7OTxMsOmgHuUSGQBUxHhuUGcv19uT
@@ -299,6 +285,81 @@ First field = host or ip
 Second field = encryption algorithm
 Third field = public key
 
+
+
+
+#network
+ifconfig = ip -br addr = ip -s link usb0 
+ip route
+tracepath
+ss -ta = display socket status
+
+nmcli dev status = see status
+nmcli con show = including uuid
+
+
+
+
+#Network Manager file path
+vim /etc/NetworkManager/system-connections/
+
+cat etc/hostname = hostname
+cat etc/hosts
+
+hostnamectl hostname host.example.com 
+hostnamectl status
+
+host classroom.example.com = test dns name solution 
+dig classroom.example.com = test dns server connectivity
+
+
+
+
+#read package name 
+Name Version Release Architecture 
+Coreutils - 8.32 - 31.el9 . x86_64.rpm
+
+rpm2cpio = extract files form package without installing 
+
+
+
+
+###disk management
+ | cpio -idv = blocks count 
+
+df -h = to see disk information 
+
+du -h /usr/share = to see disk usage 
+
+lsblk = identify a block device 
+
+mount /dev/vda4 /mnt/data = set mount point
+
+lsblk -fp
+mount UUID="efd314d0-b56e-45db-bbb3-3f32ae98f652" /mnt/data = mount with file-system UUID
+
+umount /mnt/data = unmount 
+
+lsof = list of all open file and process 
+
+
+
+
+###Locate file
+updatedb = record file db
+locate -i filename = case insensitive
+
+find / -name '*.txt' = real-time 
+find -user developer = user base
+find /home -perm u=rwx,g=rw,o=r --->>> permission base
+find -size 10M = Larger or Lower
+find / -mmin +120 = date ago
+
+- For regular files, use the f flag.
+- For directories, use the d flag.
+- For soft links, use the l flag.
+- For block devices, use the b flag.
+find /etc -type d
 
 
 
