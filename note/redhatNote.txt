@@ -56,10 +56,14 @@ uptime = display current load
 lscpu
 
 #network
-ifconfig
+ifconfig = ip -br addr = ip -s link usb0 
 ip route
 tracepath
 ss -ta = display socket status
+
+nmcli dev status = see status
+nmcli con show = including uuid
+
 
 
 #output file
