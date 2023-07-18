@@ -1,3 +1,18 @@
+#!/usr/bin/bash
+
+
+
+var=$(hostname -s); echo $var
+echo "***** hostname is ${var} *****"
+echo Your username variable is \$USER.
+
+
+
+for VARIABLE in LIST; do
+COMMAND VARIABLE
+done
+
+
 transport=('car' 'train' 'bike' 'bus')
 echo "${transport[@]}"
 
