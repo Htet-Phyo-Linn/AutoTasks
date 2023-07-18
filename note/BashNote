@@ -8,11 +8,12 @@ echo Your username variable is \$USER.
 
 
 
+
+
 ###for loop
 for VARIABLE in LIST; do
 COMMAND VARIABLE
 done
-
 
 for HOST in host1 host2 host3;
 do echo $HOST;
@@ -20,6 +21,21 @@ done
 
 option -> host{1,2,3} -> host{1..5} -> host{a..g}
 
+seq 2 2 10 = start2 +2 end10
+
+exit 2 = exit code check with "echo $?"
+
+gt = greater than
+ge = greater than equal 
+lt = less than
+le = less than equal 
+
+z = zero length 
+n = non-zero length 
+-f = file
+-d = dictionary 
+-L = symbolic link
+-R = read permission 
 
 
 
