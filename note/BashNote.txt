@@ -31,7 +31,8 @@ exit 2 = exit code check with "echo $?"
 gt = greater than
 ge = greater than equal 
 lt = less than
-le = less than equal 
+le = less than equal
+-ne = not equal
 
 z = zero length 
 n = non-zero length 
@@ -41,6 +42,11 @@ n = non-zero length
 -R = read permission 
 
 [[]] = text comparison 
+
+^cat = start with cat
+dog$ = end with dog
+^cat$ = only match
+
 
 
 transport=('car' 'train' 'bike' 'bus')
