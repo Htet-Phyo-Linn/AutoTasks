@@ -2,7 +2,7 @@
 h    j    k  l
 left down up right
 
-
+***
 
 ## Should know
 
@@ -22,7 +22,7 @@ left down up right
 - `shift+i` = select multiple line and insert multiple line (vscode)
 - `shift+j` = combine line 1 and line 2 
   
-
+***
 
 ## Input session
 
@@ -39,7 +39,7 @@ left down up right
 - `shift+v` = select line (visual line)
 - `ctrl+v` = manual select (visual block)
 
-
+***
 
 ## Delete session
 
@@ -51,6 +51,7 @@ left down up right
 - `d4w` = delete four words
 - `c` = delete one char and then go insert mode
 
+***
 
 ## Jump session
 
@@ -63,7 +64,7 @@ left down up right
 - `w` = jump to next words
 - `b` = jump to previous word
 
-
+***
 
 ## Replace and change
 
@@ -73,7 +74,7 @@ left down up right
 - `8w` = jump eight word after ther cursor
 - `c7w` = change 7 words
 
-
+***
 
 ## Example 
 
@@ -81,6 +82,7 @@ left down up right
 for (i=0, i++, i<10){
 	array=[]
 }
+
 ```
 
 
@@ -100,7 +102,7 @@ for (i=0, i++, i<10){
 - `<` = select and left delete tab
 - `=` = indent
 
-
+***
 
 ## Next level cmd
 
@@ -123,3 +125,5 @@ for (i=0, i++, i<10){
 - `:set autoindent` = auto inentation
 - `:set mouse=a` = active mouse
 - `:set mouse=""` = deactive mouse
+
+***
