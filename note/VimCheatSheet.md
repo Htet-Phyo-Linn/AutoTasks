@@ -85,7 +85,7 @@ for (i=0, i++, i<10){
 
 
 ### Looping section
-- 
+
 - `ci(` = change inner parentheses
 - `ci)` = change inner parentheses
 - `ci[` = change inner brackets
