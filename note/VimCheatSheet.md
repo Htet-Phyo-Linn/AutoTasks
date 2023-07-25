@@ -81,7 +81,6 @@ left down up right
 for (i=0, i++, i<10){
 	array=[]
 }
-
 ```
 
 
