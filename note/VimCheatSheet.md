@@ -77,10 +77,12 @@ left down up right
 
 ## Example 
 
-	for (i=0, i++, i<10){
-		array=[]
-	} 
+```
+for (i=0, i++, i<10){
+	array=[]
+}
 
+```
 
 
 ### Looping section
