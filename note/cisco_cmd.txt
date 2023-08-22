@@ -1,6 +1,48 @@
+Enable mode = enable 
+
+Configuration mode = configure terminal
+
+
+#enter interface
+interface gigabitethernet 0/0
+in = interface
+in g0/0
+
+
+#subnet mask
+ip address 10.255.255.254 ?
+ip address 10.255.255.254 255.0.0.0
+
+
+active ip address = no shutdown 
+
+show interfaces description
+
+
+##configure DHCP Server
+
+#not use ip range
+ip dhcp excluded-address 192.168.10.1 192.168.10.10
+
+#configure dhcp pool
+ip dhcp pool R1.LAN
+network 192.168.10.0 255.255.255.0
+dafault-router 192.168.10.1
+dns-server 192.168.1.254
+
+
+
+
 Router> = user EXEC mode
+
 Router# = privileged EXEC mode
 Router(config)# = global configuration mode
+
+
+
+
+
+
 
 
 login root user{ enable ,en }
@@ -51,19 +93,10 @@ short form = do sh ip int br
 
 
 
-#interface
-interface gigabitethernet 0/0
-in = interface
-in g0/0
 
 
-#subnet mask
-ip address 10.255.255.254 ?
-ip address 10.255.255.254 255.0.0.0
 
 
-no shutdown
-show interfaces description
 
 
 43. 109. 23. 12 /8
