@@ -14,9 +14,16 @@ ip address 10.255.255.254 ?
 ip address 10.255.255.254 255.0.0.0
 
 
+#change ip address
+no ip address
+
 active ip address = no shutdown 
 
 show interfaces description
+
+
+#show configuration in enable mode
+show running-config
 
 
 ##configure DHCP Server
@@ -30,6 +37,16 @@ network 192.168.10.0 255.255.255.0
 dafault-router 192.168.10.1
 dns-server 192.168.1.254
 
+
+#enter serial interface
+int se 0/0/0
+ip address 172.31.1.194 255.255.255.252
+
+
+#check clock rate and set
+clock rate ?
+clock rate 128000
+(no shutdown require)
 
 
 
