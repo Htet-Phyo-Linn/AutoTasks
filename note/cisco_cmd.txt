@@ -49,6 +49,12 @@ clock rate 128000
 (no shutdown require)
 
 
+EIGRP, OSPF, STATIC ROUTING
+
+
+#Static Routing
+#pc 1 know routing to router 1, connet R1 and R2 
+ip route 
 
 Router> = user EXEC mode
 
