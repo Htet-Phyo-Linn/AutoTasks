@@ -19,7 +19,12 @@ no ip address
 
 active ip address = no shutdown 
 
-show interfaces description
+##show interface setup
+show ip interface 
+show ip interface brief 
+
+
+show ip interfaces description
 
 
 #show configuration in enable mode
