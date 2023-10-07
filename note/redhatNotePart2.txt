@@ -1,0 +1,33 @@
+#Red Hat System Administration Part II
+
+
+
+##Bash Essentials
+
+which 
+echo @PATH
+
+first line -> #!/usr/bin/bash
+comment -> echo # not a comment #
+
+using variable -> var=$(hostname -s); echo $var
+				-> echo "***** hostname is ${var} *****"
+				-> echo Your username variable is \$USER.
+				-> echo "Will variable $var evaluate to $(hostname -s)?"
+				-> echo "\"Hello, world\""
+
+
+###Loop format
+
+for VARIABLE in LIST; do
+COMMAND VARIABLE
+done
+
+##type or usage
+for HOST in host1 host2 host3; do echo $HOST; done
+
+for HOST in host{1,2,3}; do echo $HOST; done
+
+for HOST in host{1..3}; do echo $HOST; done
+
+for FILE in file{a..c}; do ls $FILE; done
