@@ -39,3 +39,5 @@ for EVEN in $(seq 2 2 10); do echo "$EVEN"; done
 for PACKAGE in $(rpm -qa | grep kernel); \
 do echo "$PACKAGE was installed on \
 $(date -d @$(rpm -q --qf "%{INSTALLTIME}\n" $PACKAGE))"; done
+
+echo $?
