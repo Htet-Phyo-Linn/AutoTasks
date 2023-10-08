@@ -1,0 +1,4 @@
+for HOST in servera serverb
+do
+ssh student@${HOST} hostname
+done
