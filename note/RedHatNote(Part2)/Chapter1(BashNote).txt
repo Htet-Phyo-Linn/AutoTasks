@@ -4,7 +4,7 @@
 true = 0
 false = 1
 
-
+you can run any path = ~/bin/test.sh
 
 ##Bash Essentials
 

@@ -1,0 +1,9 @@
+cat
+dog
+concatenate
+dogma
+category
+educated
+boondoggle
+vindication
+chilidog
