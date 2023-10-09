@@ -1,0 +1,4 @@
+sudo apt-get install pandoc -y
+sudo apt-get install textlive -y
+
+pandoc grepNote.md -o grepNote.pdf
