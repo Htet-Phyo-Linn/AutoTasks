@@ -1,0 +1,22 @@
+sudo apt install ripgrep
+sudo apt install fzf
+sudo apt install bat
+
+
+### Possible need
+sudo find / -name bat -type f
+
+ls -l /usr/share/lintian/overrides/bat
+chmod +x /usr/share/lintian/overrides/bat
+source ~/.zshrc
+
+ls -l /usr/share/lintian/overrides/bat
+sudo mv /usr/share/lintian/overrides/bat /usr/bin/
+sudo chmod +x /usr/bin/bat
+
+
+
+
+### Main
+mkdir -p ~/.local/bin
+ln -s /usr/bin/batcat ~/.local/bin/bat
