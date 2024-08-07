@@ -1,0 +1,32 @@
+php artisan serve
+
+php artisan make:view greeting
+
+
+
+php artisan make:controller ArticleController
+
+
+
+php artisan make:migration about_table --create=about
+php artisan migrate
+php artisan make:model About
+
+
+
+php artisan make:seeder AboutTableSeeder
+php artisan db:seed --class=AboutTableSeeder
+
+
+
+php artisan config:clear
+php artisan cache:clear
+php artisan view:clear
+
+
+
+npm install --save-dev vite laravel-vite-plugin
+
+
+
+composer require laravel/breeze --dev

@@ -1,0 +1,16 @@
+composer dump-autoload
+
+
+
+## error tat yin, delete vendor folder and reinstall
+
+composer install 
+
+composer update
+
+
+
+
+
+
+php artisan

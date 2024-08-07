@@ -1,0 +1,17 @@
+sudo apt install at
+
+#show job list 
+atq
+
+#simple cmd
+at 22:23 today < hello.sh
+
+#tmr
+at 22:23 < hello.sh
+
+#cmd to text
+echo "date >> /home/guardiau-devil/sche.txt" | at now +1min
+
+#watch job list
+watch atq
+
