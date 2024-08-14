@@ -72,5 +72,6 @@ if __name__ == '__main__':
 
     if subtitle == 1:
         download_subtitles_from_playlist(playlist_url)
+        Print("Download successful!!!")
     else:
-        print("Download Successfull!!")
+        print("Download Finished!!!")
