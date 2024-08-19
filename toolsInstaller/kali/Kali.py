@@ -8,7 +8,8 @@ ins = "sudo apt-get install"
 with open("Kali.csv", "r") as data:
 	for line in csv.reader(data):
 		#print(line)
-		arr.append(line)
+		if any(field.strip() for field in line):  # Check if there's any non-whitespace content in the line
+			arr.append(line)
 
 
 
