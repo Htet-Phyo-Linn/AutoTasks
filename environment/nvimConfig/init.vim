@@ -22,7 +22,10 @@ Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple c
 Plug 'https://github.com/neoclide/coc.nvim'
 Plug 'vim-airline/vim-airline-themes'
 
+
+Plug 'Exafunction/codeium.vim', { 'branch': 'main' }
 set encoding=UTF-8
+set clipboard=unnamedplus
 
 
 call plug#end()
@@ -31,9 +34,13 @@ nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
+nnoremap <A-m> :bn<CR>
+nnoremap <A-p> :bp<CR>
+nnoremap <C-r> :NERDTreeRefreshRoot<CR>
 
 nmap <F8> :TagbarToggle<CR>
 
+let g:codeium_disable_bindings = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:multi_cursor_use_default_mapping=0
 
@@ -48,6 +55,7 @@ let g:multi_cursor_next_key            = '<C-n>'
 let g:multi_cursor_prev_key            = '<C-p>'
 let g:multi_cursor_skip_key            = '<C-x>'
 let g:multi_cursor_quit_key            = '<Esc>'
+
 
 :set completeopt-=preview " For No Previews
 
