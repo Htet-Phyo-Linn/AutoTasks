@@ -18,7 +18,7 @@ mv *.ttf ~/.local/share/fonts/
 
 
 #change config
-vim .zshrc
+#vim .zshrc
 #powerlevel10k/powerlevel10k
 
-p10k configure
+#p10k configure
