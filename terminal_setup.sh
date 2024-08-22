@@ -28,7 +28,7 @@ clone_repo "https://github.com/Htet-Phyo-Linn/AutoTasks.git" "$HOME/AutoTasks"
 
 # Run ssh_setup.py
 echo "Running SSH setup..."
-python3 "$HOME/AutoTasks/tools/ssh_setup.py"
+python3 "$HOME/AutoTasks/tools/setup_ssh.py"
 
 # Install Oh My Zsh
 echo "Installing Oh My Zsh..."
