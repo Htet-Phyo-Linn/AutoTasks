@@ -59,16 +59,13 @@ mkdir -p ~/.local/share/fonts
 wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
 mv *.ttf ~/.local/share/fonts/
 
+cd $HOME 
 # Clone Config-Backup repository using SSH
 clone_repo "git@github.com:Htet-Phyo-Linn/Config-Backup.git" "$HOME/Config-Backup"
 
 # Run setup_config.py
 echo "Restoring configuration files..."
 python3 "$HOME/AutoTasks/tools/setup_config.py"
-
-# Run setup_cron.sh
-echo "Setting up cron jobs..."
-bash "$HOME/AutoTasks/tools/setup_cron.sh"
 
 # Install Neovim plugins
 echo "Run PlugInstall in Neovim"

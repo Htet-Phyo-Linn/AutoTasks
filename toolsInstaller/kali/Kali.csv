@@ -28,6 +28,8 @@ nodejs
 npm
 
 
+wine32:i386
+
 exiftool
 readelf
 pdftotext

@@ -25,8 +25,8 @@ for x in arr:
 	os.system(ins + ss + " -y ")
 
 
-ohMyZsh = "sh -c \"$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)\""
-os.system(ohMyZsh)
+#ohMyZsh = "sh -c \"$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)\""
+#os.system(ohMyZsh)
 
 
 fixList = [
