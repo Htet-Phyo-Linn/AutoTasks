@@ -20,6 +20,10 @@ if [ ! -d ".git" ]; then
     git remote add origin git@github.com:Htet-Phyo-Linn/Config-Backup.git  # Set up your remote repository URL
 fi
 
+# SSH Key to the SSH Agent
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa_github
+
 # Sync the files from the array
 for file in "${CONFIG_FILES[@]}"; do
     rsync -av --delete "$file" "$BACKUP_DIR"
