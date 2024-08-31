@@ -23,8 +23,9 @@ clone_repo() {
     fi
 }
 
-# Clone AutoTasks repository
-clone_repo "https://github.com/Htet-Phyo-Linn/AutoTasks.git" "$HOME/AutoTasks"
+# Change AutoTasks repository
+cd $HOME/AutoTasks
+git remote set-url origin git@github.com:Htet-Phyo-Linn/AutoTasks.git
 
 # Run ssh_setup.py
 echo "Running SSH setup..."
