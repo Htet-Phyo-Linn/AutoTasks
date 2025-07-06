@@ -1,0 +1,13 @@
+viw select word
+va) select the whole ()
+ctrl+shift+ enter new lines
+
+# brave next and previous
+Ctrl + Tab
+Ctrl + Shift + Tab
+
+# close all files
+Ctrl + Shift + p
+close all editors
+
+

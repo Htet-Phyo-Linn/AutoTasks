@@ -2,7 +2,7 @@ import os
 import json
 
 
-ipInfo = "curl https://ipinfo.io?token=4fe1b10c31ee0f"
+ipInfo = "curl http://ip-api.com"
 
 os.system(ipInfo)
 

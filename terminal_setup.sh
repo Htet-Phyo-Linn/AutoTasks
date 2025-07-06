@@ -10,7 +10,6 @@ error_exit() {
 }
 
 trap 'error_exit $LINENO' ERR
-
 # Function to clone a Git repository
 clone_repo() {
     local repo_url=$1
@@ -22,18 +21,6 @@ clone_repo() {
         echo "Directory $target_dir already exists. Skipping clone."
     fi
 }
-
-# Change AutoTasks repository
-cd $HOME/AutoTasks
-git remote set-url origin git@github.com:Htet-Phyo-Linn/AutoTasks.git
-
-# Run ssh_setup.py
-echo "Running SSH setup..."
-python3 "$HOME/AutoTasks/tools/setup_ssh.py"
-
-# Install Oh My Zsh
-echo "Installing Oh My Zsh..."
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Install Zsh plugins
 echo "Installing Zsh plugins..."
